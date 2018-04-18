@@ -15,7 +15,7 @@
 }
 /*产品详情*/
 .shopping-cart-page .product-picture{
-    display: inline-block;
+    /*display: inline-block;*/
 }
     /**********结算尾部**BEGIN*******/
 .shopping-cart-page .cart-options{
