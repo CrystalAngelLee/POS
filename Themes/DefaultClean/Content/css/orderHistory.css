@@ -1,0 +1,74 @@
+.center-2{
+    width: 100%;
+}
+/***********Title部分**BEGIN*******/
+.order-list-page .order_history_list{
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.order-list-page .order_history_date,.order-list-page .order_history_number{
+    margin-right: 35px;
+}
+.order-list-page .order_history_date>input{
+    width: 100px;
+}
+.order-list-page .order_history_status>select{
+    width: 200px;
+}
+.order-list-page .order_history_status>button{
+    padding: 7px 25px;
+    background: none;
+    border: 1px solid #ccc;
+}
+.order-list-page .order_history_status>button.active{
+    background: #ffe700;
+}
+/***********Title部分**END*******/
+/***********List部分**Begin*******/
+.order-list-page .order-item{
+    border: 1px solid #ccc;
+    margin: 0 0 25px;
+}
+.order-list-page .order-list .title{
+    background-color: #f6f6f6;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    /*border-top: 1px solid #ccc;*/
+    margin:0;
+}
+.order-list-page .title span{
+    color:#000;
+    font-size: 14px;
+}
+.order-list-page .title .order_list_detail{
+    cursor: pointer;
+}
+.order-list-page .title .order_list_detail img{
+    vertical-align: middle;
+}
+
+.order-list-page .page-body ul.info{
+    border: 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+.order-list-page .page-body ul.info>li{
+    position: relative;
+    float: left;
+    width: 33.3%;
+    /*clear: both;*/
+}
+.order-list-page ul.info span{
+     color:#000;
+ }
+.order-list-page .page-body ul.info span.order_No{
+    display: inline-block;
+    width: 178px;
+    color: #626262;
+    text-align: right;
+    padding-right: 5px;
+}
+
