@@ -1820,8 +1820,8 @@ table.data-table{
 }
 .overview .product-name {
 	margin: 0 0 25px;
-	border-bottom: 1px solid #ddd;
-	padding: 0 0 10px;
+	/*border-bottom: 1px solid #ddd;*/
+	/*padding: 0 0 10px;*/
 }
 .overview .product-name h1 {
 	font-size: 30px;
@@ -6471,7 +6471,7 @@ pre {
 	.footer-lower {
 		position: relative;
 		width: 980px;
-		padding: 25px 5px;
+		/*padding: 25px 5px;*/
 	}
 	.footer-lower:after {
 		content: "";
@@ -6907,7 +6907,7 @@ pre {
 	}
 	.footer-lower {
 		width: 1200px;
-		padding: 25px 20px;
+		/*padding: 25px 20px;*/
 	}
 
 

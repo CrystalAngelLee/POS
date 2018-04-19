@@ -1,0 +1,104 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.product-details-page{
+    margin-top: -20px;
+    padding: 0;
+}
+.product-details-page .product-essential{
+    border:0;
+}
+.product-details-page .gallery .picture img{
+    border: 1px solid #ccc;
+}
+.product-details-page .gallery .thumb-item:first-child{
+    margin-left: 0;
+}
+.product-details-page .gallery .thumb-item{
+    border: 1px solid #ccc;
+}
+/*详情介绍*/
+.product-details-page .product-name{
+    margin-top: 20px;
+}
+.product-details-page .product-name h1{
+    font-size: 24px;
+    color: #000;
+}
+.product-details-page .product_detail{
+    overflow: hidden;
+
+}
+.product-details-page .product_detail p{
+    line-height: 25px;
+}
+.product-details-page .product_detail span{
+    color:#000;
+    padding-left: 5px;
+}
+
+.product-details-page .product_detail .product_item{
+    margin-right: 100px;
+}
+.product-details-page .product_detail .product_material{
+
+}
+.product-details-page .prices{
+    margin-top: 25px;
+}
+.product-details-page .product-price{
+    color:#000;
+    font-size:14px;
+    font-weight: normal;
+}
+.product-details-page .product-price>span{
+    color: #f23c3c;
+    font-size: 30px;
+    font-weight: 700;
+    vertical-align: unset !important;
+    padding-right: 8px;
+}
+.product-details-page .quantity{
+    overflow: hidden;
+    margin-top: 35px;
+}
+.product-details-page .quantity .quantity_name{
+    vertical-align: middle;
+    line-height: 38px;
+    padding-right: 10px;
+}
+.product-details-page .quantity>input{
+    width: 45px;
+    margin-right: 5px;
+}
+.product-details-page .cart_btn{
+    cursor: pointer;
+}
+.product-details-page .overview_buttons{
+    overflow: hidden;
+    padding-top: 25px;
+}
+.product-details-page .overview_buttons .overview_add{
+    background: #dcdcdc;
+    width: 47%;
+    padding: 13px 42px;
+    color: #000;
+    position: relative;
+    cursor: pointer;
+}
+.product-details-page .overview_buttons .add_to_cart{
+    margin-right: 20px;
+}
+.product-details-page .overview_buttons .add_to_cart.active,.product-details-page .overview_buttons .add-to-wishlist.active{
+    background-color: #ffde00;
+}
+.product-details-page .overview_buttons .add-to-wishlist{
+
+}
+.product-details-page .overview_buttons .add_to_cart>img,.product-details-page .overview_buttons .add-to-wishlist>img{
+    position: absolute;
+    right: 28px;
+}
