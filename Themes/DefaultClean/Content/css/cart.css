@@ -1,27 +1,58 @@
-.cart th, .data-table th, .forum-table th{
-    border:none;
-}
+
 .cart td, .data-table td, .forum-table td{
+    border-left: none;
+    border-right: none;
+}
+.shopping-cart-page table.cart{
+
+}
+.shopping-cart-page table.cart tr:last-child td{
     border:none;
 }
 .shopping-cart-page .order-summary-content{
     border: 1px solid #bbb;
 }
 .shopping-cart-page table{
-    border-collapse: separate;
+    /*border-collapse: separate;*/
 }
-.shopping-cart-page form{
-    border-left: 1px solid #bbb;
+/*************头部**BEGIN************/
+.cart_title{
+    background: #f2f2f2;
+    padding: 15px 23px 15px 21px;
+    overflow: hidden;
 }
+.cart_title .cart_link{
+    float: right;
+}
+.cart_title .cart_link>span{
+    border: 1px solid #bbb;
+    padding: 8px 18px;
+    margin-right: 10px;
+    background: #fff;
+    /* text-align: right; */
+}
+.cart_title .cart_link>span:last-child{
+    margin: 0;
+}
+/*************头部**END************/
 /*产品详情*/
 .shopping-cart-page .product-picture{
     /*display: inline-block;*/
+    /*display: flex;*/
+    overflow: hidden;
 }
-    /**********结算尾部**BEGIN*******/
+.shopping-cart-page .product-picture>div{
+    float: left;
+}
+.shopping-cart-page .product-picture div.product_title{
+    line-height: 84px;
+    margin-left: 19px;
+}
+/**********结算尾部**BEGIN*******/
 .shopping-cart-page .cart-options{
     background: #f2f2f2;
     font-size: 14px;
-    padding: 30px 30px 50px 27px;
+    padding: 30px 30px 50px 24px;
 }
 .shopping-cart-page .cart_option{
     display: flex;
@@ -38,6 +69,7 @@
     padding: 7px 18px;
     margin-left: 29px;
     cursor: pointer;
+    background-color: #fff;
 }
 .shopping-cart-page .cart_quantity{
     color: #000;

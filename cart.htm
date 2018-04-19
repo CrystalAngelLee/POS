@@ -234,33 +234,16 @@
                                 <input name="__RequestVerificationToken" type="hidden"
                                        value="gO0hK_aC-9xn3-MHMMde-QxBytpDjKm-P2zJYgrgcvOy49X1OyNqy8m-9R3i1q4EsA3Jp1Ngt1_Bi4lxmIbhPx_rGSAtGCnCdRWcRNYYS-NLQ9_UJf0E_3LM6H-pl-vG0"/>
                                 <div class="table-wrapper">
-                                    <table class="cart" border="0" cellpadding="0" cellspacing="0">
-                                        <!--<colgroup>-->
-                                        <!--<col width="1" />-->
-                                        <!--<col width="1" />-->
-                                        <!--<col width="1" />-->
-                                        <!--<col  width="1"/>-->
-                                        <!--<col width="1" />-->
-                                        <!--<col width="1" />-->
-                                        <!--<col width="1" />-->
-                                        <!--</colgroup>-->
-                                        <thead>
-                                        <tr>
-                                            <th class="remove-from-cart"><input type="checkbox"/></th>
-                                            <th>Select</th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th class="cart_link">
-                                                <button>Back To Search</button>
-                                            </th>
-                                            <th class="cart_link">
-                                                <button>Favor List</button>
-                                            </th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
+                                    <div class="cart_title">
+                                        <div class="cart_select">
+                                            <input type="checkbox">Select All
+                                        </div>
+                                        <div class="cart_link">
+                                            <span><a href="">Back To Search</a></span>
+                                            <span><a href="">Favor List</a></span>
+                                        </div>
+                                    </div>
+                                    <table class="cart">
                                         <tr>
                                             <td class="remove-from-cart">
                                                 <label class="td-title">Remove:</label>
@@ -271,13 +254,16 @@
                                                     <a href="/build-your-own-computer"><img
                                                             alt="Picture of Build your own computer"
                                                             src="Themes/DefaultClean/Content/images/cart/1.jpg"
-                                                            title="Show details for Build your own computer"/></a>
+                                                            title="Show details for Build your own computer"/>
+
+                                                    </a>
                                                 </div>
+                                                <div class="product_title">Giti Digital Kit (Mouse & Laser Pointer)</div>
                                             </td>
-                                            <td class="sku">
-                                                <label class="td-title">SKU:</label>
-                                                <span class="sku-number">COMP_CUST</span>
-                                            </td>
+                                            <!--<td class="sku">-->
+                                                <!--<label class="td-title">SKU:</label>-->
+                                                <!--<span class="sku-number">COMP_CUST</span>-->
+                                            <!--</td>-->
                                             <td class="unit-price">
                                                 <label class="td-title">Price:</label>
                                                 <p class="product-unit-price"><span>128</span>Points</p>
@@ -290,9 +276,10 @@
                                                 <label class="td-title">Qty.:</label>
                                                 <input name="itemquantity17" type="text" value="1" class="qty-input"/>
                                                 <span>
-                               <div class="cart_btn">&and;</div>
-                               <div class="cart_btn">&nu;</div>
-                           </span>
+<div class="cart_btn"><img
+        src="Themes/DefaultClean/Content/images/cart/up.png"/></div>
+<div class="cart_btn"><img src="Themes/DefaultClean/Content/images/cart/down.png"/></div>
+</span>
                                             </td>
                                             <td class="subtotal">
                                                 Amount:
@@ -313,13 +300,16 @@
                                                     <a href="/build-your-own-computer"><img
                                                             alt="Picture of Build your own computer"
                                                             src="Themes/DefaultClean/Content/images/cart/1.jpg"
-                                                            title="Show details for Build your own computer"/></a>
+                                                            title="Show details for Build your own computer"/>
+
+                                                    </a>
                                                 </div>
+                                                <div class="product_title">Giti Digital Kit (Mouse & Laser Pointer)</div>
                                             </td>
-                                            <td class="sku">
-                                                <label class="td-title">SKU:</label>
-                                                <span class="sku-number">COMP_CUST</span>
-                                            </td>
+                                            <!--<td class="sku">-->
+                                            <!--<label class="td-title">SKU:</label>-->
+                                            <!--<span class="sku-number">COMP_CUST</span>-->
+                                            <!--</td>-->
                                             <td class="unit-price">
                                                 <label class="td-title">Price:</label>
                                                 <p class="product-unit-price"><span>128</span>Points</p>
@@ -332,9 +322,10 @@
                                                 <label class="td-title">Qty.:</label>
                                                 <input name="itemquantity17" type="text" value="1" class="qty-input"/>
                                                 <span>
-                               <div class="cart_btn">&and;</div>
-                               <div class="cart_btn">&nu;</div>
-                           </span>
+<div class="cart_btn"><img
+        src="Themes/DefaultClean/Content/images/cart/up.png"/></div>
+<div class="cart_btn"><img src="Themes/DefaultClean/Content/images/cart/down.png"/></div>
+</span>
                                             </td>
                                             <td class="subtotal">
                                                 Amount:
@@ -345,7 +336,98 @@
                                                 Remove
                                             </td>
                                         </tr>
-                                        </tbody>
+                                        <tr>
+                                            <td class="remove-from-cart">
+                                                <label class="td-title">Remove:</label>
+                                                <input type="checkbox" name="removefromcart" value="17"/>
+                                            </td>
+                                            <td class="product-picture">
+                                                <div class="product_img">
+                                                    <a href="/build-your-own-computer"><img
+                                                            alt="Picture of Build your own computer"
+                                                            src="Themes/DefaultClean/Content/images/cart/1.jpg"
+                                                            title="Show details for Build your own computer"/>
+
+                                                    </a>
+                                                </div>
+                                                <div class="product_title">Giti Digital Kit (Mouse & Laser Pointer)</div>
+                                            </td>
+                                            <!--<td class="sku">-->
+                                            <!--<label class="td-title">SKU:</label>-->
+                                            <!--<span class="sku-number">COMP_CUST</span>-->
+                                            <!--</td>-->
+                                            <td class="unit-price">
+                                                <label class="td-title">Price:</label>
+                                                <p class="product-unit-price"><span>128</span>Points</p>
+                                            </td>
+                                            <td class="itemCode">
+                                                <p>Item Code:<span>95GP007</span></p>
+                                            </td>
+                                            <td class="quantity">
+                                                Quantity:
+                                                <label class="td-title">Qty.:</label>
+                                                <input name="itemquantity17" type="text" value="1" class="qty-input"/>
+                                                <span>
+<div class="cart_btn"><img
+        src="Themes/DefaultClean/Content/images/cart/up.png"/></div>
+<div class="cart_btn"><img src="Themes/DefaultClean/Content/images/cart/down.png"/></div>
+</span>
+                                            </td>
+                                            <td class="subtotal">
+                                                Amount:
+                                                <label class="td-title">Total:</label>
+                                                <span class="product-subtotal">640</span>
+                                            </td>
+                                            <td class="cart_remove">
+                                                Remove
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="remove-from-cart">
+                                                <label class="td-title">Remove:</label>
+                                                <input type="checkbox" name="removefromcart" value="17"/>
+                                            </td>
+                                            <td class="product-picture">
+                                                <div class="product_img">
+                                                    <a href="/build-your-own-computer"><img
+                                                            alt="Picture of Build your own computer"
+                                                            src="Themes/DefaultClean/Content/images/cart/1.jpg"
+                                                            title="Show details for Build your own computer"/>
+
+                                                    </a>
+                                                </div>
+                                                <div class="product_title">Giti Digital Kit (Mouse & Laser Pointer)</div>
+                                            </td>
+                                            <!--<td class="sku">-->
+                                            <!--<label class="td-title">SKU:</label>-->
+                                            <!--<span class="sku-number">COMP_CUST</span>-->
+                                            <!--</td>-->
+                                            <td class="unit-price">
+                                                <label class="td-title">Price:</label>
+                                                <p class="product-unit-price"><span>128</span>Points</p>
+                                            </td>
+                                            <td class="itemCode">
+                                                <p>Item Code:<span>95GP007</span></p>
+                                            </td>
+                                            <td class="quantity">
+                                                Quantity:
+                                                <label class="td-title">Qty.:</label>
+                                                <input name="itemquantity17" type="text" value="1" class="qty-input"/>
+                                                <span>
+<div class="cart_btn"><img
+        src="Themes/DefaultClean/Content/images/cart/up.png"/></div>
+<div class="cart_btn"><img src="Themes/DefaultClean/Content/images/cart/down.png"/></div>
+</span>
+                                            </td>
+                                            <td class="subtotal">
+                                                Amount:
+                                                <label class="td-title">Total:</label>
+                                                <span class="product-subtotal">640</span>
+                                            </td>
+                                            <td class="cart_remove">
+                                                Remove
+                                            </td>
+                                        </tr>
                                     </table>
                                 </div>
                                 <div class="cart-options">
@@ -359,7 +441,9 @@
                                             <div class="cart_quantity_amount">Total Amount: <span>1920</span></div>
                                         </div>
                                     </div>
-                                    <div class="cart_payment"><button>结算</button></div>
+                                    <div class="cart_payment">
+                                        <button>结算</button>
+                                    </div>
 
                                     <script type="text/javascript">
                                         $(document).ready(function () {
