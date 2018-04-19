@@ -1,3 +1,4 @@
+/*********************************cart页面&&wishlist页面**********************/
 .cart td, .data-table td, .forum-table td{
     border-left: none;
     border-right: none;
@@ -95,3 +96,20 @@
     margin-top: 30px;
 }
 /**********结算尾部**END*******/
+/*********************wishlist页面*****************/
+.wishlist-page .subtotal>img{
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.wishlist-page .subtotal{
+    cursor: pointer;
+}
+.wishlist-page .cart-options{
+    padding: 30px 30px 120px 24px;
+}
+.wishlist-page .cart_title{
+    padding: 15px 12px 15px 21px;
+}
+.wishlist-page .cart_title .cart_link>span{
+    padding: 8px 12px;
+}
