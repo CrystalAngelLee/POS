@@ -1,41 +1,30 @@
-
-
-
 <!DOCTYPE html>
 <html class="html-order-details-page">
 <head>
     <title>Your store. Order Details</title>
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="generator" content="nopCommerce" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    
-    
-    
-    <link href="Content/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
-<link href="Themes/DefaultClean/Content/css/styles.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="generator" content="nopCommerce"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+
+    <link href="Content/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css"/>
+    <link href="Themes/DefaultClean/Content/css/styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="Themes/DefaultClean/Content/css/Order-history-detail.css">
     <script src="Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
-<script src="Scripts/jquery.validate.min.js" type="text/javascript"></script>
-<script src="Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
-<script src="Scripts/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
-<script src="Scripts/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-<script src="Scripts/public.common.js" type="text/javascript"></script>
-<script src="Scripts/public.ajaxcart.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/public.common.js" type="text/javascript"></script>
+    <script src="Scripts/public.ajaxcart.js" type="text/javascript"></script>
 
-    
-    
-    
-    
-    
-<link rel="shortcut icon" href="favicon.ico" />
+
+    <link rel="shortcut icon" href="favicon.ico"/>
     <!--Powered by nopCommerce - http://www.nopCommerce.com-->
 </head>
 <body>
-    
-
 
 
 <div class="ajax-loading-block-window" style="display: none">
@@ -51,841 +40,346 @@
 </div>
 
 
-
-
 <!--[if lte IE 7]>
-    <div style="clear:both;height:59px;text-align:center;position:relative;">
-        <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank">
-            <img src="/Themes/DefaultClean/Content/images/ie_warning.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-        </a>
-    </div>
+<div style="clear:both;height:59px;text-align:center;position:relative;">
+    <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank">
+        <img src="/Themes/DefaultClean/Content/images/ie_warning.jpg" height="42" width="820"
+             alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+    </a>
+</div>
 <![endif]-->
 
 
 <div class="master-wrapper-page">
-        <div class="admin-header-links">
-                    <a href="/admin" class="administration">Administration</a>
-            </div>
 
     <div class="header">
-    
-    <div class="header-upper">
-        <div class="header-selectors-wrapper">
-            
+        <div class="header-upper">
+            <div class="header-selectors-wrapper">
                 <div class="currency-selector">
-<select id="customerCurrency" name="customerCurrency" onchange="setLocation(this.value);"><option selected="selected" value="/changecurrency/1?returnurl=%2forderdetails%2f10">US Dollar</option>
-<option value="/changecurrency/6?returnurl=%2forderdetails%2f10">Euro</option>
-</select>
-    </div>
-
-            
-            
-        </div>
-        <div class="header-links-wrapper">
-            <div class="header-links">
-    <ul>
-        
-            <li><a href="/customer/info" class="ico-account">My account</a></li>
-            <li><a href="/logout" class="ico-logout">Log out</a></li>
-                            <li>
-                <a href="/wishlist" class="ico-wishlist">
-                    <span class="wishlist-label">Wishlist</span>
-                    <span class="wishlist-qty">(2)</span>
-                </a>
-            </li>
-                    <li id="topcartlink">
-                <a href="/cart" class="ico-cart">
-                    <span class="cart-label">Shopping cart</span>
-                    <span class="cart-qty">(2)</span>
-                </a>
-            </li>
-        
-    </ul>
-            <script type="text/javascript">
-            $(document).ready(function () {
-                $('.header').on('mouseenter', '#topcartlink', function () {
-                    $('#flyout-cart').addClass('active');
-                });
-                $('.header').on('mouseleave', '#topcartlink', function () {
-                    $('#flyout-cart').removeClass('active');
-                });
-                $('.header').on('mouseenter', '#flyout-cart', function () {
-                    $('#flyout-cart').addClass('active');
-                });
-                $('.header').on('mouseleave', '#flyout-cart', function () {
-                    $('#flyout-cart').removeClass('active');
-                });
-            });
-        </script>
-</div>
-
-            <div id="flyout-cart" class="flyout-cart">
-    <div class="mini-shopping-cart">
-        <div class="count">
-There are <a href="/cart">2 item(s)</a> in your cart.        </div>
-            <div class="items">
-                    <div class="item first">
-                            <div class="picture">
-                                <a href="/adidas-consortium-campus-80s-running-shoes" title="Show details for adidas Consortium Campus 80s Running Shoes">
-                                    <img alt="Picture of adidas Consortium Campus 80s Running Shoes" src="http://localhost:15536/content/images/thumbs/0000053_adidas-consortium-campus-80s-running-shoes_70.jpg" title="Show details for adidas Consortium Campus 80s Running Shoes" />
-                                </a>
-                            </div>
-                        <div class="product">
-                            <div class="name">
-                                <a href="/adidas-consortium-campus-80s-running-shoes">adidas Consortium Campus 80s Running Shoes</a>
-                            </div>
-                                <div class="attributes">
-                                    Size: 8<br />Color: Red
-                                </div>
-                            <div class="price">Unit price: <span>$27.56</span></div>
-                            <div class="quantity">Quantity: <span>1</span></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                            <div class="picture">
-                                <a href="/build-your-own-computer" title="Show details for Build your own computer">
-                                    <img alt="Picture of Build your own computer" src="http://localhost:15536/content/images/thumbs/0000020_build-your-own-computer_70.jpeg" title="Show details for Build your own computer" />
-                                </a>
-                            </div>
-                        <div class="product">
-                            <div class="name">
-                                <a href="/build-your-own-computer">Build your own computer</a>
-                            </div>
-                                <div class="attributes">
-                                    Processor: 2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]<br />RAM: 2 GB<br />HDD: 400 GB [+$100.00]<br />OS: Vista Home [+$50.00]<br />Software: Microsoft Office [+$50.00]
-                                </div>
-                            <div class="price">Unit price: <span>$1,415.00</span></div>
-                            <div class="quantity">Quantity: <span>1</span></div>
-                        </div>
-                    </div>
+                    <img src="Themes/DefaultClean/Content/images/header/logo.png"/>
+                    <span class="header_theme">POS</span>
+                </div>
             </div>
-            <div class="totals">Sub-Total: <strong>$1,442.56</strong></div>
-            <div class="buttons">
-                    <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation('/cart')" />
-                            </div>
-    </div>
-</div>
+            <div class="header-links-wrapper">
+                <div class="header-links">
+                    <ul>
+                        <li class="header_user">Welcome, <span>EDLCustomerA</span></li>
+                        <li class="header_points">Points：<span>1856</span></li>
+                        <li class="header_collection"><img
+                                src="Themes/DefaultClean/Content/images/header/collection.png"/></li>
+                        <li class="header_shoppingCart"><img src="Themes/DefaultClean/Content/images/shopping-bag.png"/>
+                        </li>
+                        <li><a href="/logout" class="ico-logout"><span class="header_logout">Logout</span></a></li>
+                    </ul>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('.header').on('mouseenter', '#topcartlink', function () {
+                                $('#flyout-cart').addClass('active');
+                            });
+                            $('.header').on('mouseleave', '#topcartlink', function () {
+                                $('#flyout-cart').removeClass('active');
+                            });
+                            $('.header').on('mouseenter', '#flyout-cart', function () {
+                                $('#flyout-cart').addClass('active');
+                            });
+                            $('.header').on('mouseleave', '#flyout-cart', function () {
+                                $('#flyout-cart').removeClass('active');
+                            });
+                        });
+                    </script>
+                </div>
 
+                <div id="flyout-cart" class="flyout-cart">
+                    <div class="mini-shopping-cart">
+                        <div class="count">
+                            You have no items in your shopping cart.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-lower">
+            <span>Home</span>
+            <select>
+                <option selected="selected" value="">Order Promo Items</option>
+                <option value="">Euro</option>
+            </select>
         </div>
     </div>
-    <div class="header-lower">
-        <div class="header-logo">
-            <a href="/">
-    <img title="" alt="Your store name" src="http://localhost:15536/Themes/DefaultClean/Content/images/logo.png">
-</a>
-        </div>
-        <div class="search-box store-search-box">
-            <form action="/search" id="small-search-box-form" method="get">    <input type="text" class="search-box-text" id="small-searchterms" autocomplete="off" name="q" placeholder="Search store" />
-    <input type="submit" class="button-1 search-box-button" value="Search" />
-        <script type="text/javascript">
-            $("#small-search-box-form").submit(function(event) {
-                if ($("#small-searchterms").val() == "") {
-                    alert('Please enter some search keyword');
-                    $("#small-searchterms").focus();
-                    event.preventDefault();
-                }
-            });
-        </script>
-        
-            <script type="text/javascript">
-                $(document).ready(function() {
-                    $('#small-searchterms').autocomplete({
-                            delay: 500,
-                            minLength: 3,
-                            source: '/catalog/searchtermautocomplete',
-                            appendTo: '.search-box',
-                            select: function(event, ui) {
-                                $("#small-searchterms").val(ui.item.label);
-                                setLocation(ui.item.producturl);
-                                return false;
-                            }
-                        })
-                        .data("ui-autocomplete")._renderItem = function(ul, item) {
-                            var t = item.label;
-                            //html encode
-                            t = htmlEncode(t);
-                            return $("<li></li>")
-                                .data("item.autocomplete", item)
-                                .append("<a><span>" + t + "</span></a>")
-                                .appendTo(ul);
-                        };
-                });
-            </script>
-        
-</form>
-        </div>
-    </div>
-</div>
 
     <script type="text/javascript">
         AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
     </script>
     <div class="header-menu">
-        
+        <span>Home <i>/</i></span>
+        <span class="currentPage">Order History</span>
+        <div class="menu-toggle">Categories</div>
+        <ul class="top-menu mobile">
 
-<ul class="top-menu">
-    
-    
-    <li>
-        <a href="/computers">Computers
-        </a>
-                <div class="sublist-toggle"></div>
-                <ul class="sublist first-level">
-    <li>
-        <a href="/desktops">Desktops
-        </a>
-
-    </li>
-    <li>
-        <a href="/notebooks">Notebooks
-        </a>
-
-    </li>
-    <li>
-        <a href="/software">Software
-        </a>
-
-    </li>
-                </ul>
-
-    </li>
-    <li>
-        <a href="/electronics">Electronics
-        </a>
-                <div class="sublist-toggle"></div>
-                <ul class="sublist first-level">
-    <li>
-        <a href="/camera-photo">Camera &amp; photo
-        </a>
-
-    </li>
-    <li>
-        <a href="/cell-phones">Cell phones
-        </a>
-
-    </li>
-    <li>
-        <a href="/others">Others
-        </a>
-
-    </li>
-                </ul>
-
-    </li>
-    <li>
-        <a href="/apparel">Apparel
-        </a>
-                <div class="sublist-toggle"></div>
-                <ul class="sublist first-level">
-    <li>
-        <a href="/shoes">Shoes
-        </a>
-
-    </li>
-    <li>
-        <a href="/clothing">Clothing
-        </a>
-
-    </li>
-    <li>
-        <a href="/accessories">Accessories
-        </a>
-
-    </li>
-                </ul>
-
-    </li>
-    <li>
-        <a href="/digital-downloads">Digital downloads
-        </a>
-
-    </li>
-    <li>
-        <a href="/books">Books
-        </a>
-
-    </li>
-    <li>
-        <a href="/jewelry">Jewelry
-        </a>
-
-    </li>
-    <li>
-        <a href="/gift-cards">Gift Cards
-        </a>
-
-    </li>
-                                
-</ul>
-
-    <div class="menu-toggle">Categories</div>
-    <ul class="top-menu mobile">
-        
             <li>
-        <a href="/computers">Computers
-        </a>
+                <a href="/computers">Computers
+                </a>
                 <div class="sublist-toggle"></div>
                 <ul class="sublist first-level">
-    <li>
-        <a href="/desktops">Desktops
-        </a>
+                    <li>
+                        <a href="/desktops">Desktops
+                        </a>
 
-    </li>
-    <li>
-        <a href="/notebooks">Notebooks
-        </a>
+                    </li>
+                    <li>
+                        <a href="/notebooks">Notebooks
+                        </a>
 
-    </li>
-    <li>
-        <a href="/software">Software
-        </a>
-
-    </li>
+                    </li>
+                    <li>
+                        <a href="/software">Software</a>
+                    </li>
                 </ul>
 
-    </li>
-    <li>
-        <a href="/electronics">Electronics
-        </a>
+            </li>
+            <li>
+                <a href="/electronics">Electronics
+                </a>
                 <div class="sublist-toggle"></div>
                 <ul class="sublist first-level">
-    <li>
-        <a href="/camera-photo">Camera &amp; photo
-        </a>
+                    <li>
+                        <a href="/camera-photo">Camera &amp; photo
+                        </a>
 
-    </li>
-    <li>
-        <a href="/cell-phones">Cell phones
-        </a>
+                    </li>
+                    <li>
+                        <a href="/cell-phones">Cell phones
+                        </a>
 
-    </li>
-    <li>
-        <a href="/others">Others
-        </a>
+                    </li>
+                    <li>
+                        <a href="/others">Others
+                        </a>
 
-    </li>
+                    </li>
                 </ul>
 
-    </li>
-    <li>
-        <a href="/apparel">Apparel
-        </a>
+            </li>
+            <li>
+                <a href="/apparel">Apparel
+                </a>
                 <div class="sublist-toggle"></div>
                 <ul class="sublist first-level">
-    <li>
-        <a href="/shoes">Shoes
-        </a>
+                    <li>
+                        <a href="/shoes">Shoes
+                        </a>
 
-    </li>
-    <li>
-        <a href="/clothing">Clothing
-        </a>
+                    </li>
+                    <li>
+                        <a href="/clothing">Clothing
+                        </a>
 
-    </li>
-    <li>
-        <a href="/accessories">Accessories
-        </a>
+                    </li>
+                    <li>
+                        <a href="/accessories">Accessories
+                        </a>
 
-    </li>
+                    </li>
                 </ul>
 
-    </li>
-    <li>
-        <a href="/digital-downloads">Digital downloads
-        </a>
+            </li>
+            <li>
+                <a href="/digital-downloads">Digital downloads
+                </a>
 
-    </li>
-    <li>
-        <a href="/books">Books
-        </a>
+            </li>
+            <li>
+                <a href="/books">Books
+                </a>
 
-    </li>
-    <li>
-        <a href="/jewelry">Jewelry
-        </a>
+            </li>
+            <li>
+                <a href="/jewelry">Jewelry
+                </a>
 
-    </li>
-    <li>
-        <a href="/gift-cards">Gift Cards
-        </a>
+            </li>
+            <li>
+                <a href="/gift-cards">Gift Cards
+                </a>
 
-    </li>
-                                                                
-    </ul>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.menu-toggle').click(function () {
-                $(this).siblings('.top-menu.mobile').slideToggle('slow');
+            </li>
+
+        </ul>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.menu-toggle').click(function () {
+                    $(this).siblings('.top-menu.mobile').slideToggle('slow');
+                });
+                $('.top-menu.mobile .sublist-toggle').click(function () {
+                    $(this).siblings('.sublist').slideToggle('slow');
+                });
             });
-            $('.top-menu.mobile .sublist-toggle').click(function () {
-                $(this).siblings('.sublist').slideToggle('slow');
-            });
-        });
-    </script>
-
-
-
-
-
+        </script>
     </div>
     <div class="master-wrapper-content">
-        
+
 
         <div class="master-column-wrapper">
-            
-<div class="center-1">
-    
-    
-<div class="page order-details-page">
-        <div class="page-title">
-            <h1>Order information</h1>
-            <a href="/orderdetails/print/10" target="_blank" class="button-2 print-order-button">Print</a>
-                <a href="/orderdetails/pdf/10" class="button-2 pdf-invoice-button">PDF Invoice</a>
-        </div>
-    <div class="page-body">
-        
-        <div class="order-overview">
-            <div class="order-number">
-                <strong>Order #10</strong>
-            </div>
-            <ul class="order-overview-content">
-                <li class="order-date">
-                    Order Date: Friday, April 13, 2018
-                </li>
-                <li class="order-status">
-                    Order Status: Pending
-                </li>
-                <li class="order-total">
-                    Order Total: <strong>$1,362.00</strong>
-                </li>
-            </ul>
-            
-        </div>
-        <div class="order-details-area">
-            <div class="billing-info-wrap">
-                <div class="billing-info">
-	                <div class="title">
-	                    <strong>Billing Address</strong>
-	                </div>
-                    <ul class="info-list">
-                        <li class="name">
-                            John Smith
-                        </li>
-                        <li class="email">
-                            Email: admin@yourStore.com
-                        </li>
-                            <li class="phone">
-                                Phone: 12345678
-                            </li>
-                                                    <li class="fax">
-                                Fax: 
-                            </li>
-                                                    <li class="company">
-                                Nop Solutions Ltd
-                            </li>
-                                                    <li class="address1">
-                                21 West 52nd Street
-                            </li>
-                                                                            <li class="city-state-zip">
-New York                                                                    ,
-                                New York                                10021                            </li>
-                                                    <li class="country">
-                                United States
-                            </li>
-                                                                                            </ul>
-                </div>
-                    <div class="payment-method-info">
-                        <div class="title">
-                            <strong>Payment</strong>
-                        </div>
-                        <ul class="info-list">
-                            <li class="payment-method">
-                                <span class="label">
-                                    Payment Method:
-                                </span>
-                                <span class="value">
-                                    Check / Money Order
-                                </span>
-                            </li>
-                                <li class="payment-method-status">
-                                    <span class="label">
-                                        Payment Status:
-                                    </span>
-                                    <span class="value">
-                                        Pending
-                                    </span>
-                                </li>
-                                                    </ul>
-                    </div>
-            </div>
-                <div class="shipping-info-wrap">
-                    <div class="shipping-info">
-	                    <div class="title">
-	                        <strong>Shipping Address</strong>
-	                    </div>
-                        <ul class="info-list">
-                                <li class="name">
-                                    John Smith
-                                </li>
-                                <li class="email">
-                                    Email: admin@yourStore.com
-                                </li>
-                                    <li class="phone">
-                                        Phone: 12345678
-                                    </li>
-                                    <li class="fax">
-                                        Fax: 
-                                    </li>
-                                    <li class="company">
-                                        Nop Solutions Ltd
-                                    </li>
-                                    <li class="address1">
-                                        21 West 52nd Street
-                                    </li>
-                                    <li class="city-state-zip">
-New York                                                                                    ,
-                                        New York                                        10021                                    </li>
-                                    <li class="country">
-                                        United States
-                                    </li>
-                        </ul>
-                    </div>
-                    <div class="shipping-method-info">
-                        <div class="title">
-                            <strong>Shipping</strong>
-                        </div>
-                        <ul class="info-list">
-                            <li class="shipping-method">
-                                <span class="label">
-                                    Shipping Method:
-                                </span>
-                                <span class="value">
-                                    Ground
-                                </span>
-                            </li>
-                                <li class="shipping-status">
-                                    <span class="label">
-                                        Shipping Status:
-                                    </span>
-                                    <span class="value">
-                                        Not yet shipped
-                                    </span>
-                                </li>
-                        </ul>
-                    </div>
-                </div>
-        </div>
-                    <div class="section products">
-                <div class="title">
-                    <strong>Product(s)</strong>
-                </div>
-                <div class="table-wrapper">
-                    <table class="data-table">
-                        <colgroup>
-                                <col width="1" />
-                            <col />
-                            <col width="1" />
-                            <col width="1" />
-                            <col width="1" />
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                    <th class="sku">
-                                        SKU
-                                    </th>
-                                <th class="name">
-                                    Name
-                                </th>
-                                <th class="price">
-                                    Price
-                                </th>
-                                <th class="quantity">
-                                    Quantity
-                                </th>
-                                <th class="total">
-                                    Total
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                                <tr>
-                                        <td class="sku">
-                                            <label class="td-title">SKU:</label>
-                                            <span class="sku-number">FR_451_RB</span>
-                                        </td>
-                                    <td class="product">
-                                            <em><a href="/fahrenheit-451-by-ray-bradbury">Fahrenheit 451 by Ray Bradbury</a></em>
-                                                                                                                                                                                                        
-                                    </td>
-                                    <td class="unit-price">
-                                        <label class="td-title">Price:</label>
-                                        <span class="product-unit-price">$27.00</span>
-                                    </td>
-                                    <td class="quantity">
-                                        <label class="td-title">Quantity:</label>
-                                        <span class="product-quantity">1</span>
-                                    </td>
-                                    <td class="total">
-                                        <label class="td-title">Total:</label>
-                                        <span class="product-subtotal">$27.00</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                        <td class="sku">
-                                            <label class="td-title">SKU:</label>
-                                            <span class="sku-number">COMP_CUST</span>
-                                        </td>
-                                    <td class="product">
-                                            <em><a href="/build-your-own-computer">Build your own computer</a></em>
-                                                                                    <div class="attributes">
-                                                Processor: 2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]<br />RAM: 4GB [+$20.00]<br />HDD: 320 GB<br />OS: Vista Home [+$50.00]<br />Software: Microsoft Office [+$50.00]
-                                            </div>
-                                                                                                                                                                
-                                    </td>
-                                    <td class="unit-price">
-                                        <label class="td-title">Price:</label>
-                                        <span class="product-unit-price">$1,335.00</span>
-                                    </td>
-                                    <td class="quantity">
-                                        <label class="td-title">Quantity:</label>
-                                        <span class="product-quantity">1</span>
-                                    </td>
-                                    <td class="total">
-                                        <label class="td-title">Total:</label>
-                                        <span class="product-subtotal">$1,335.00</span>
-                                    </td>
-                                </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="section options">
-                    <div class="selected-checkout-attributes">
-                        Gift wrapping: No
-                    </div>
-            </div>
-            <div class="section totals">
-                <div class="total-info">
-                    <table class="cart-total">
-                        <tbody>
-                            <tr>
-                                <td class="cart-total-left">
-                                    <label>Sub-Total:</label>
-                                </td>
-                                <td class="cart-total-right">
-                                    <span>$1,362.00</span>
-                                </td>
-                            </tr>
-                                                            <tr>
-                                    <td class="cart-total-left">
-                                        <label>Shipping:</label>
-                                    </td>
-                                    <td class="cart-total-right">
-                                        <span>$0.00</span>
-                                    </td>
-                                </tr>
-                                                                                                                    <tr>
-                                    <td class="cart-total-left">
-                                        <label>Tax:</label>
-                                    </td>
-                                    <td class="cart-total-right">
-                                        <span>$0.00</span>
-                                    </td>
-                                </tr>
-                                                                                                                <tr>
-                                <td class="cart-total-left">
-                                    <label>Order Total:</label>
-                                </td>
-                                <td class="cart-total-right">
-                                    <span><strong>$1,362.00</strong></span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                    <div class="actions">
-                            <input type="button" value="Re-order" class="button-1 re-order-button" onclick="setLocation('/reorder/10    ')" />
-                                            </div>
-            </div>
-        
-    </div>
-</div>
 
-    
-</div>
+            <div class="center-1">
+
+
+                <div class="page order-details-page">
+                    <div class="page-title">
+                        <span>Back To The Order List</span>
+                    </div>
+                    <div class="page-body">
+                        <div class="order_details">
+                            <div class="order_details_title">
+                                <span class="order_details_date">2018-04-09</span>
+                                <span class="order_details_cancel">Cancel</span>
+                            </div>
+                            <div class="order_details_info">
+                                <ul class="info">
+                                    <li class="order_history_No">
+                                        <ul>
+                                            <li><span class="order_No">The Order No: </span>
+                                                <span>P2017111431482189688</span>
+                                            </li>
+                                            <li><span class="order_No">The Name of Customer: </span>
+                                                <span>Giti Malaysia</span>
+                                            </li>
+                                            <li><span class="order_No">Port: </span>
+                                                <span>General Santos,Philippines</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="customer_history_No">
+                                        <ul>
+                                            <li><span class="order_No">The Customer No: </span>
+                                                <span>EDL0063003</span>
+                                            </li>
+                                            <li><span class="order_No">Total Quantity: </span>
+                                                <span>5</span>
+                                            </li>
+                                            <li><span class="order_No">Billing Address: </span>
+                                                <span>General Santos,Philippines</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="status_history_No">
+                                        <ul>
+                                            <li><span class="order_No"> The Order Status:</span>
+                                                <span>New</span>
+                                            </li>
+                                            <li><span class="order_No">Total Amount: </span>
+                                                <span>125 Points</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product_detail">
+                                <h3>Products detail：</h3>
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>Item Code</th>
+                                        <th>Product Name</th>
+                                        <th>Brand</th>
+                                        <th>Factory</th>
+                                        <th>QTY</th>
+                                        <th>Unit Price</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>95GP007</td>
+                                        <td>Ball Pen</td>
+                                        <td>Giti</td>
+                                        <td>Anhui</td>
+                                        <td>5</td>
+                                        <td>25</td>
+                                        <td>125</td>
+                                    </tr>
+                                    <tr>
+                                        <td>95GP007</td>
+                                        <td>Ball Pen</td>
+                                        <td>Giti</td>
+                                        <td>Anhui</td>
+                                        <td>5</td>
+                                        <td>25</td>
+                                        <td>125</td>
+                                    </tr>
+                                    <tr>
+                                        <td>95GP007</td>
+                                        <td>Ball Pen</td>
+                                        <td>Giti</td>
+                                        <td>Anhui</td>
+                                        <td>5</td>
+                                        <td>25</td>
+                                        <td>125</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
 
         </div>
-        
+
     </div>
     <div class="footer">
-    <div class="footer-upper">
-        <div class="footer-block information">
-            <div class="title">
-                <strong>Information</strong>
+
+        <div class="footer-lower">
+            <div class="footer-info">
+                <span class="footer-disclaimer">Copyright &copy; 2018 Your store name. All rights reserved.</span>
             </div>
-            <ul class="list">
-                    <li><a href="/sitemap">Sitemap</a></li>
-                                    <li><a href="/shipping-returns">Shipping &amp; returns</a></li>
-                    <li><a href="/privacy-notice">Privacy notice</a></li>
-                    <li><a href="/conditions-of-use">Conditions of Use</a></li>
-                    <li><a href="/about-us">About us</a></li>
-                <li><a href="/contactus">Contact us</a></li>
-            </ul>
         </div>
-        <div class="footer-block customer-service">
-            <div class="title">
-                <strong>Customer service</strong>
-            </div>
-            <ul class="list">
-                <li><a href="/search">Search</a> </li>
-                    <li><a href="/news">News</a></li>
-                                    <li><a href="/blog">Blog</a></li>
-                                                    <li><a href="/recentlyviewedproducts">Recently viewed products</a></li>
-                                    <li><a href="/compareproducts">Compare products list</a></li>
-                                    <li><a href="/newproducts">New products</a></li>
-                            </ul>
-        </div>
-        <div class="footer-block my-account">
-            <div class="title">
-                <strong>My account</strong>
-            </div>
-            <ul class="list">
-                <li><a href="/customer/info">My account</a></li>
-                <li><a href="/order/history">Orders</a></li>
-                <li><a href="/customer/addresses">Addresses</a></li>
-                    <li><a href="/cart">Shopping cart</a></li>
-                                    <li><a href="/wishlist">Wishlist</a></li>
-                                    <li><a href="/vendor/apply">Apply for vendor account</a></li>
-                            </ul>
-        </div>
-        <div class="footer-block follow-us">
-            <div class="social">
-                <div class="title">
-                    <strong>Follow us</strong>
-                </div>
-                <ul class="networks">
-		<li class="facebook"><a href="http://www.facebook.com/nopCommerce" target="_blank">Facebook</a></li>
-			<li class="twitter"><a href="https://twitter.com/nopCommerce" target="_blank">Twitter</a></li>
-			<li class="rss"><a href="/news/rss/1">RSS</a></li>
-			<li class="youtube"><a href="http://www.youtube.com/user/nopCommerce" target="_blank">YouTube</a></li>
-			<li class="google-plus"><a href="https://plus.google.com/+nopcommerce" target="_blank">Google+</a></li>
-</ul>
-            </div>
-            <div class="newsletter">
-    <div class="title">
-        <strong>Newsletter</strong>
+
     </div>
-    <div class="newsletter-subscribe" id="newsletter-subscribe-block">
-        <div class="newsletter-email">
-            <input class="newsletter-subscribe-text" id="newsletter-email" name="NewsletterEmail" placeholder="Enter your email here..." type="text" value="" />
-            <input type="button" value="Subscribe" id="newsletter-subscribe-button" class="button-1 newsletter-subscribe-button" />
-        </div>
-        <div class="newsletter-validation">
-            <span id="subscribe-loading-progress" style="display: none;" class="please-wait">Wait...</span>
-            <span class="field-validation-valid" data-valmsg-for="NewsletterEmail" data-valmsg-replace="true"></span>
-        </div>
-    </div>
-    <div class="newsletter-result" id="newsletter-result-block"></div>
     <script type="text/javascript">
-        function newsletter_subscribe(subscribe) {
-            var subscribeProgress = $("#subscribe-loading-progress");
-            subscribeProgress.show();
-            var postData = {
-                subscribe: subscribe,
-                email: $("#newsletter-email").val()
-            };
-            $.ajax({
-                cache: false,
-                type: "POST",
-                url: "/subscribenewsletter",
-                data: postData,
-                success: function(data) {
-                    subscribeProgress.hide();
-                    $("#newsletter-result-block").html(data.Result);
-                    if (data.Success) {
-                        $('#newsletter-subscribe-block').hide();
-                        $('#newsletter-result-block').show();
-                    } else {
-                        $('#newsletter-result-block').fadeIn("slow").delay(2000).fadeOut("slow");
-                    }
-                },
-                error: function(xhr, ajaxOptions, thrownError) {
-                    alert('Failed to subscribe.');
-                    subscribeProgress.hide();
+        $(document).ready(function () {
+            $('.footer-block .title').click(function () {
+                var e = window, a = 'inner';
+                if (!('innerWidth' in window)) {
+                    a = 'client';
+                    e = document.documentElement || document.body;
+                }
+                var result = {width: e[a + 'Width'], height: e[a + 'Height']};
+                if (result.width < 769) {
+                    $(this).siblings('.list').slideToggle('slow');
                 }
             });
-        }
-
+        });
+    </script>
+    <script type="text/javascript">
         $(document).ready(function () {
-            $('#newsletter-subscribe-button').click(function () {
-                    newsletter_subscribe('true');
-            });
-            $("#newsletter-email").keydown(function (event) {
-                if (event.keyCode == 13) {
-                    $("#newsletter-subscribe-button").click();
-                    return false;
+            $('.block .title').click(function () {
+                var e = window, a = 'inner';
+                if (!('innerWidth' in window)) {
+                    a = 'client';
+                    e = document.documentElement || document.body;
+                }
+                var result = {width: e[a + 'Width'], height: e[a + 'Height']};
+                if (result.width < 1001) {
+                    $(this).siblings('.listbox').slideToggle('slow');
                 }
             });
         });
     </script>
 </div>
 
-        </div>
-    </div>
-    <div class="footer-lower">
-        <div class="footer-info">
-            <span class="footer-disclaimer">Copyright &copy; 2018 Your store name. All rights reserved.</span>
-        </div>
-            <div class="footer-powered-by">
-                
-                Powered by <a href="http://www.nopcommerce.com/">nopCommerce</a>
-            </div>
-        
-    </div>
-    
-</div>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.footer-block .title').click(function () {
-            var e = window, a = 'inner';
-            if (!('innerWidth' in window)) {
-                a = 'client';
-                e = document.documentElement || document.body;
-            }
-            var result = { width: e[a + 'Width'], height: e[a + 'Height'] };
-            if (result.width < 769) {
-                $(this).siblings('.list').slideToggle('slow');
-            }
-        });
-    });
-</script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.block .title').click(function () {
-            var e = window, a = 'inner';
-            if (!('innerWidth' in window)) {
-                a = 'client';
-                e = document.documentElement || document.body;
-            }
-            var result = { width: e[a + 'Width'], height: e[a + 'Height'] };
-            if (result.width < 1001) {
-                $(this).siblings('.listbox').slideToggle('slow');
-            }
-        });
-    });
-</script>
-</div>
-
-
-
-    
-    
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Chrome","requestId":"56c11f936aa94400bf3e5784cb8268da"}
+    {
+        "appName": "Chrome",
+        "requestId": "56c11f936aa94400bf3e5784cb8268da"
+    }
 </script>
-<script type="text/javascript" src="http://localhost:59362/2bf7d95b324d4a0aaf9e781fc34d1c04/browserLink" async="async"></script>
+<script type="text/javascript" src="http://localhost:59362/2bf7d95b324d4a0aaf9e781fc34d1c04/browserLink"
+        async="async"></script>
 <!-- End Browser Link -->
 
 </body>
