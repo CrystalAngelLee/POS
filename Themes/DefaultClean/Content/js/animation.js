@@ -17,5 +17,11 @@
         if(count != 0) count--;
         $(".quantity>input").val(count);
     })
-
+// 商品列表页
+//     $('.plus').click(function (e) {
+//         var num = $(e).parents().find('.product_item_num>input').val();
+//         num++;
+//         $(e).parents().find('.product_item_num>input').val(num);
+//         console.log();
+//     })
 })()
