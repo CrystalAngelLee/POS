@@ -1,0 +1,23 @@
+.order-completed-page{
+    border: 1px solid #ccc;
+    margin-top: -26px;
+    text-align: center;
+    padding: 100px 0 90px;
+}
+.order-completed-page .result_success{
+    color: #000;
+    line-height: 50px;
+    padding: 10px 0;
+}
+.order-completed-page p{
+    line-height: 30px;
+}
+.order-completed-page .result_link{
+    margin-top: 20px;
+}
+.order-completed-page .result_link span{
+    border: 1px solid #ccc;
+    color: #000;
+    padding: 7px 27px;
+    margin: 0 5px;
+}
