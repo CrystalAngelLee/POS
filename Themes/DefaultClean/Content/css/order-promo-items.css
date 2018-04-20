@@ -1,0 +1,49 @@
+/**************侧边导航栏部分**BEGIN********/
+.order-promo-itemsPage .side-2{
+    width: 23%;
+    background: #f9f9f9;
+}
+.order-promo-itemsPage .block-category-navigation .title{
+    border-top: 3px solid #000;
+    border-bottom: 0;
+    padding: 20px;
+}
+.order-promo-itemsPage .block-category-navigation .title input{
+    background: url(../images/cart/search.png) no-repeat right;
+    border-radius: 25px;
+    height: 31px;
+    /* padding-right: 8px; */
+    background-color: #eee;
+    border-color: #bfbfbf;
+}
+.order-promo-itemsPage .block-category-navigation .listbox{
+    padding: 0;
+}
+.order-promo-itemsPage .block-category-navigation .listbox>ul>li{
+    margin-bottom: 30px;
+}
+.order-promo-itemsPage .block-category-navigation .listbox span{
+    color: #000;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+.order-promo-itemsPage .sublist_box{
+
+}
+.order-promo-itemsPage .sublist_box>li{
+    border: 1px solid;
+    padding: 5px 0 5px 30px;
+    margin-bottom: 2px;
+}
+/**************侧边导航栏部分**END********/
+/***********商品列表部分**BEGIN********/
+.order-promo-itemsPage .center-2{
+    float: right;
+}
+.order-promo-itemsPage .item-grid .item-box{
+    width: 25%;
+}
+
+/***********商品列表部分**END********/
