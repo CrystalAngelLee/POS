@@ -1,4 +1,6 @@
-/*********************************cart页面&&wishlist页面**********************/
+.fl{float: left}
+.fr{float:right }
+/*********************************cart页面&&wishlist页面&&checkOut页面**********************/
 .cart td, .data-table td, .forum-table td{
     border-left: none;
     border-right: none;
@@ -112,4 +114,68 @@
 }
 .wishlist-page .cart_title .cart_link>span{
     padding: 8px 12px;
+}
+/*********************************checkOut页面**********************/
+.checkout-page{
+    color: #000;
+}
+/****Address Confirmation*/
+.checkout-page .address_title,.checkout-page .order_title,.checkout-page .remark_title{
+    background: #ebebeb;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.checkout-page .address_selection{
+    padding: 30px 40px;
+}
+.checkout-page .address_billing{
+    margin: 20px 0 30px 0;
+}
+.checkout-page .address_selection select{
+    width: 200px;
+    color: #000;
+}
+/*.checkout-page .address_selection select option{*/
+    /*color: #000;*/
+/*}*/
+/*Order Confirmation*/
+.checkout-page .order_confirmation{
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    margin: 20px 0;
+}
+.checkout-page .product_title{
+    line-height: 84px;
+    margin-left: 19px;
+}
+/*remark*/
+.checkout-page .remark_detail>textarea{
+    width: 80%;
+    margin: 30px 0 50px;
+}
+.checkout-page .remark_submmit{
+    background: #ebebeb;
+    text-align: right;
+    padding: 20px 25px;
+}
+.checkout-page .remark_amount{
+    margin-left: 20px;
+}
+.checkout-page .remark_amount>strong{
+    font-size: 19px;
+    color:#f23c3c;
+}
+.checkout-page .remark_link>button{
+    margin: 20px 0;
+    border: 0;
+    background: #fff;
+    padding: 8px 50px;
+    font-weight: 600;
+}
+.checkout-page .remark_link>button.remark_submit{
+    margin-left: 9px;
+}
+.checkout-page .remark_link>button.active{
+    background: #ffde00;
 }
