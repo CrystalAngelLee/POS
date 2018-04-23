@@ -1,0 +1,6 @@
+.reward-points-page .title strong{
+    padding-right: 18px;
+}
+.reward-points-page .title strong:last-child{
+    padding-right: 0;
+}
