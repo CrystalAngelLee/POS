@@ -806,6 +806,19 @@ table.data-table{
 .header-links li:last-child{
 	margin-right: 0;
 }
+.header-links li.header_shoppingCart{
+	position: relative;
+}
+.header-links li.header_shoppingCart>span{
+	position: absolute;
+	background: #ff0000;
+	border-radius: 50%;
+	line-height: 20px;
+	padding: 0px 6px;
+	color: #fff;
+	top: -6px;
+	right: -14px;
+}
 .header-links span,
 .header-links a {
 	display: inline-block;
@@ -847,6 +860,7 @@ table.data-table{
 	border-radius: 4px;
 	line-height: 23px !important;
 	font-size: 14px !important;
+	margin-left: 15px;
 }
 .header_collection{
 	border-left: 1px solid #ddd;
