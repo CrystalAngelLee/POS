@@ -365,7 +365,7 @@ table.data-table{
 }
 .data-table .points{
 	font-weight: bold;
-	border-left: none;
+	/*border-left: none;*/
 	border-right: none;
 }
 .data-table .date{
@@ -3324,9 +3324,6 @@ span.product-subtotal{
 .shopping-cart-page .page-title {
 	margin: 0 0 -1px;
 	padding: 10px;
-}
-.shopping-cart-page .page-body{
-	margin-top: -30px;
 }
 .shopping-cart-page .message-error {
 	margin: 20px 0;

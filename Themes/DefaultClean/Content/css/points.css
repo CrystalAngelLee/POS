@@ -1,6 +1,28 @@
 .reward-points-page .title strong{
-    padding-right: 18px;
+    padding-right: 40px;
 }
 .reward-points-page .title strong:last-child{
     padding-right: 0;
+}
+.reward-points-page .title span{
+    color:#000;
+}
+.reward-points-page .date{
+    /*border-left: 1px solid;*/
+    border-right: none;
+}
+.reward-points-page .message{
+    border-left: none;
+}
+.reward-points-page th.message{
+    text-align: center;
+}
+.reward-points-page .message span{
+    padding-right: 5px;
+}
+.reward-points-page td.points{
+    color: red;
+}
+.reward-points-page td.points.green{
+    color:#00a113;
 }

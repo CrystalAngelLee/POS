@@ -37,6 +37,7 @@
     margin: 0;
 }
 /*************头部**END************/
+.shopping-cart-page{color:#000}
 /*产品详情*/
 .shopping-cart-page .product-picture{
     /*display: inline-block;*/
@@ -49,6 +50,12 @@
 .shopping-cart-page .product-picture div.product_title{
     line-height: 84px;
     margin-left: 19px;
+}
+.shopping-cart-page .subtotal>label{
+    vertical-align: bottom;
+}
+.shopping-cart-page .subtotal>span{
+    font-size: 20px;
 }
 /**********结算尾部**BEGIN*******/
 .shopping-cart-page .cart-options{
@@ -91,12 +98,16 @@
 }
 .shopping-cart-page .cart_payment>button{
     float: right;
-    color: #fff;
-    background: #898989;
-    padding: 9px 81px;
+    /*color: #fff;*/
+    /*background: #898989;*/
+    padding: 9px 50px;
     border: 0;
     margin-top: 30px;
+    color:#000;
+    background:  #ffde00;
+    font-weight: bold;
 }
+
 /**********结算尾部**END*******/
 /*********************wishlist页面*****************/
 .wishlist-page .subtotal>img{
@@ -115,6 +126,9 @@
 .wishlist-page .cart_title .cart_link>span{
     padding: 8px 12px;
 }
+.wishlist-page .subtotal>span{
+    font-size: 15px;
+}
 /*********************************checkOut页面**********************/
 .checkout-page{
     color: #000;
@@ -131,6 +145,11 @@
 }
 .checkout-page .address_billing{
     margin: 20px 0 30px 0;
+}
+.checkout-page .address_selection span{
+    width: 110px;
+    text-align: right;
+    display: inline-block;
 }
 .checkout-page .address_selection select{
     width: 200px;
@@ -149,7 +168,10 @@
     line-height: 84px;
     margin-left: 19px;
 }
-/*remark*/
+.checkout-page td.subtotal>span{
+    font-size: 20px;
+}
+    /*remark*/
 .checkout-page .remark_detail>textarea{
     width: 80%;
     margin: 30px 0 50px;

@@ -1,40 +1,45 @@
 /*header_lower*/
 .header-lower{
-    height: 30px;
+    height: 40px;
 }
 .header-lower>span{
-line-height: 30px;
+line-height: 40px;
+    background: url("../images/home_1.png") no-repeat;
+    padding-left: 20px;
+    margin-left: 14px;
 }
 
 .header-lower .nav {
-    width: 200px;
-    height: 30px;
+    width: 170px;
+    height: 40px;
     /*margin: 20px auto;*/
     position: absolute;
     top: 0;
-    left: 70px;
+    left: 168px;
 }
 
 .nav p {
     display: block;
     padding-left: 10px;
-    line-height: 30px;
+    line-height: 40px;
     /*border: 1px solid #CCC;*/
 }
 
-.set {
-    background: url('../images/dropdown.png') 165px 10px no-repeat;
+.set ,.select{
+    background: url('../images/dropdown.png') 148px 10px no-repeat;
+    background-position-y: center;
 }
 .set:hover{
     background-color: #555;
 }
 
-.select {
-    background: url('../images/dropdown.png') 165px 10px no-repeat;
-}
+/*.select {*/
+    /*background: url('../images/dropdown.png') 165px 10px no-repeat;*/
+    /*background-position-y: center;*/
+/*}*/
 
 .new {
-    width: 198px;
+    width: 170px;
     position: absolute;
     /*border: 1px solid #CCC;*/
     background: #fff;
@@ -44,11 +49,15 @@ line-height: 30px;
 }
 
 .nav ul li {
-    line-height: 30px;
+    line-height: 40px;
     padding-left: 10px;
 }
 
 .nav ul li:hover {
     background: #fee800;
     /*color: #FFF;*/
+}
+/*menu*/
+.header-menu{
+    margin-bottom: 0;
 }

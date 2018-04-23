@@ -49,21 +49,38 @@
         }
     })
     // 数量增减
-    console.log($(".quantity>input").val());
+    // console.log($(".quantity>input").val());
     var count=$(".quantity>input").val();
     $("#plus").click(function () {
         count++;
         $(".quantity>input").val(count);
     });
     $("#sub").click(function () {
-        if(count != 0) count--;
+        if(count > 0) count--;
         $(".quantity>input").val(count);
     })
 // 商品列表页
-//     $('.plus').click(function (e) {
-//         var num = $(e).parents().find('.product_item_num>input').val();
-//         num++;
-//         $(e).parents().find('.product_item_num>input').val(num);
-//         console.log();
-//     })
+    $('.plus').click(function () {
+        var num=$(this).parents(".product_item_num").find("input").val();
+        num++;
+        $(this).parents(".product_item_num").find("input").val(num)
+    })
+    $('.sub').click(function () {
+        var num=$(this).parents(".product_item_num").find("input").val();
+        console.log(num);
+        if(num>0) num--;
+        $(this).parents(".product_item_num").find("input").val(num)
+    })
+    // 购物车页面
+    $('.cart_plus').click(function () {
+        var num=$(this).parents(".quantity").find("input").val();
+        num++;
+        $(this).parents(".quantity").find("input").val(num)
+    })
+    $('.cart_sub').click(function () {
+        var num=$(this).parents(".quantity").find("input").val();
+        console.log(num);
+        if(num>0) num--;
+        $(this).parents(".quantity").find("input").val(num)
+    })
 })()
