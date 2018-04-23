@@ -1,4 +1,54 @@
-/********************header***BEGIN*****************/
-/********************header***END*****************/
-/********************footer***BEGIN*****************/
-/********************footer***END*****************/
+/*header_lower*/
+.header-lower{
+    height: 30px;
+}
+.header-lower>span{
+line-height: 30px;
+}
+
+.header-lower .nav {
+    width: 200px;
+    height: 30px;
+    /*margin: 20px auto;*/
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+
+.nav p {
+    display: block;
+    padding-left: 10px;
+    line-height: 30px;
+    /*border: 1px solid #CCC;*/
+}
+
+.set {
+    background: url('../images/dropdown.png') 165px 10px no-repeat;
+}
+.set:hover{
+    background-color: #555;
+}
+
+.select {
+    background: url('../images/dropdown.png') 165px 10px no-repeat;
+}
+
+.new {
+    width: 198px;
+    position: absolute;
+    /*border: 1px solid #CCC;*/
+    background: #fff;
+    color: #000;
+    display: none;
+
+}
+
+.nav ul li {
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.nav ul li:hover {
+    background: #fee800;
+    /*color: #FFF;*/
+}
