@@ -3,16 +3,15 @@
     $(function(){
         var p=$(".nav p");
         var ul=$(".new");
-        p.click(function(){
-            p.css('background-color','#555');
-
-            if(ul.css("display")=="none"){
-                ul.slideDown();
-            }else{
-                p.css('background-color','#292929');
-                ul.slideUp();
-            }
+        p.mouseenter(function(){
+            p.addClass('active');
+            ul.slideDown();
         });
+        $("#nav").mouseleave(function () {
+            p.removeClass('active');
+            ul.slideUp();
+        });
+        console.log(p.text());
         // $(".new li").mouseout(function(){
         //     p.css('background','none');
         //     ul.slideUp();

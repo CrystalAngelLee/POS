@@ -24,6 +24,10 @@ line-height: 40px;
     line-height: 40px;
     /*border: 1px solid #CCC;*/
 }
+.nav p.active{
+    background-color: #fee800;
+    color:#000;
+}
 
 .set ,.select{
     background: url('../images/dropdown.png') 148px 10px no-repeat;
