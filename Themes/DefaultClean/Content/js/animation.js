@@ -75,12 +75,40 @@
     $('.cart_plus').click(function () {
         var num=$(this).parents(".quantity").find("input").val();
         num++;
-        $(this).parents(".quantity").find("input").val(num)
+        $(this).parents(".quantity").find("input").val(num);
+        // 商品单价
+        var point = $(this).parents(".quantity").siblings(".unit-price").find("p.product-unit-price span").text();
+        // 该商品的总价
+        var amount = $(this).parents(".quantity").siblings(".subtotal").find("span.product-subtotal");
+        var total = point*num;
+        amount.text(total);
+        TotalPrice();
     })
     $('.cart_sub').click(function () {
         var num=$(this).parents(".quantity").find("input").val();
-        console.log(num);
         if(num>0) num--;
-        $(this).parents(".quantity").find("input").val(num)
+        $(this).parents(".quantity").find("input").val(num);
+        var point = $(this).parents(".quantity").siblings(".unit-price").find("p.product-unit-price span").text();
+        var amount = $(this).parents(".quantity").siblings(".subtotal").find("span.product-subtotal");
+        var total = point*num;
+        amount.text(total);
+        TotalPrice()
     })
+    function TotalPrice() {
+        var totalprice = 0;
+        var quantity = 0;
+        // $(".shop_product_cart").find(".goodsCheck").each(function () {
+        $(".goodsCheck").each(function () {
+            //获取该商品的总价
+            var p = $(this).parents(".remove-from-cart").siblings(".subtotal").find("span.product-subtotal").text();
+            totalprice += parseFloat(p);
+            $(".cart_quantity_amount>span").text(parseFloat(totalprice).toFixed(2));
+            // 获取该商品的数量
+            var n = parseInt($(this).parents(".remove-from-cart").siblings(".quantity").find("input").val());
+            quantity += n;
+            $(".cart_quantity_total>span").text(quantity);
+        })
+    }
+    //Points页面
+
 })()
