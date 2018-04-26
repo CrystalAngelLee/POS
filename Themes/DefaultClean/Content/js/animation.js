@@ -70,7 +70,9 @@
         if(num>0) num--;
         $(this).parents(".product_item_num").find("input").val(num)
     })
+
     // 购物车页面
+    TotalPrice();
     $('.cart_plus').click(function () {
         var num=$(this).parents(".quantity").find("input").val();
         num++;
