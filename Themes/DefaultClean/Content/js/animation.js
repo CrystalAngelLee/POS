@@ -11,7 +11,7 @@
             p.removeClass('active');
             ul.slideUp();
         });
-        console.log(p.text());
+        // console.log(p.text());
         // $(".new li").mouseout(function(){
         //     p.css('background','none');
         //     ul.slideUp();
@@ -109,5 +109,11 @@
         })
     }
     //Points页面
-
+    var point =  $("td.points");
+    point.each(function(){
+        var str=$(this).text();
+        if(str.indexOf('+')>-1){
+           $(this).addClass("green");
+        }
+    })
 })()
